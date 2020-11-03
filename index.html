@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Military Enlistment</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Enlist in Military</h1>
+<form>
+    <label for="firstName">First Name: </label>
+    <input type="text" id="firstName">
+
+    <br> <br>
+
+    <label for="lastName">Last Name: </label>
+    <input type="text" id="lastName">
+
+    <br> <br>
+    <h3>Rankings</h3>
+
+    <input type="radio" name="rank" id="rankPrivate"
+           value="Private" checked="checked">
+    <label for="rankPrivate">Private</label>
+
+    <br> <br>
+
+    <input type="radio" name="rank" id="rankSergeant" value="Sergeant">
+    <label for="rankSergeant">Sergeant</label>
+
+    <br> <br>
+
+    <input type="radio" name="rank" id="rankGeneral" value="General">
+    <label for="rankGeneral">General</label>
+
+    <br> <br>
+
+    <button>Enlist Now</button>
+
+    <p class="output">You have been enlisted as a <span id="rankOutput"></span>.</p>
+</form>
+</body>
+</html>
